@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dorm Cleaning Services</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    body {
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dorm Cleaning Services</title>
+
+        <!-- Font Awesome Icons -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f5ff;
+            margin: 0;
+            padding: 0;
+            color: #01031eff;
+          }
+
+          header {
+            background-color: #87ceeb;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+          }
+
+          .section {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+          }
+
+          h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #86b5d4ff;
+          }
+
+          /* Services Grid */
+          .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+          }
+
+          .service-card {
+            background-color: dark blue;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(134, 192, 218, 1);
+            transition: 0.3s;
+          }
+
+          .service-card:hover {
+            transform: translateY(-5px);
+          }
+
+          .service-card i {
+            font-size: 40px;
+            color: #80b9dfff;
+            margin-bottom: 10px;
+          }
+
+          /* Form Section */
+          form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 5, 51, 1);
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+          }
+
+          label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #002843ff;
+            font-weight: bold;
+          }
+
+          input,
+          select,
+          textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #01041dff;
+          }
+
+          button {
+            background-color: #9cd1f5ff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+          }
+
+          button:hover {
+            background-color: #106da0;
+          }
+
+          footer {
+            text-align: center;
+            padding: 20px;
+            color: #1f7fbf;
+            margin-top: 40px;
+          }
+
+        </style>
+</head>
+
+  <body>
+        <header>Dorm Cleaning & Laundry Services</header>
+
+  <div class="section">
+        <h2>Our Services</h2>
+
+  <div class="services">
+          <div class="service-card">
+            <i class="fa-solid fa-broom"></i>
+            <h3>Normal Dorm Cleaning</h3>
+            <p>Quick and reliable cleaning to keep your space fresh.</p>
+          </div>
+
+   <div class="service-card">
+            <i class="fa-solid fa-building"></i>
+            <h3>Deep Dorm Cleaning</h3>
+            <p>Full cleaning for a healthier and cleaner environment.</p>
+          </div>
+
+   <div class="service-card">
+            <i class="fa-solid fa-shirt"></i>
+            <h3>Laundry Service</h3>
+            <p>We wash, dry, fold — and deliver your clothes fresh.</p>
+          </div>
+        </div>
+      </div>
+
+ <div class="section">
+        <h2>Book Your Service</h2>
+
+  <form action="#" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+   <label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="+212 XXX XXX" required />
+
+<label for="instagram">Instagram Username:</label>
+<input type="text" id="instagram" name="instagram" placeholder="@yourusername" required />
+
+
+   <label for="building_number">Building Number:</label>
+          <input type="text" id="building_number" name="building_number" placeholder="Enter building number" required />
+
+   <label for="room_number">Room Number:</label>
+          <input type="text" id="room_number" name="room_number" placeholder="Enter room number" required />
+
+   <label for="room_type">Room Type:</label>
+          <select id="room_type" name="room_type" required>
+            <option value="">Select room type</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="large-double">Large Double Room</option>
+            <option value="triple">Triple Room</option>
+            <option value="studio">Studio</option>
+            <option value="apartment">Apartment</option>
+          </select>
+
+   <label for="service">Service Requested:</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="normal-clean">Normal Dorm Cleaning</option>
+            <option value="deep-clean">Deep Dorm Cleaning</option>
+            <option value="laundry">Laundry Service</option>
+          </select>
+
+   <label for="notes">Additional Notes:</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any extra details?"></textarea>
+
+  <button type="submit">Submit Request</button>
+        </form>
+      </div>
+
+  <footer>© 2025 Dorm Cleaning Services</footer>
+
+   </body>
+      </html>
